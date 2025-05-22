@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #121212;
+    box-shadow: 0 0 10px #E0E0E0;
     font-family: sans-serif;
 }
 /*-------------Header-------------*/
@@ -11,15 +11,18 @@ body{
     margin: auto;
     min-height: 25vh;
     padding: 0;
-    width: 97%;
+    width: 95%;
 }
 
 .header__desciption{
-    margin-top: 10px;
+    margin-top: 20px;
+    min-height: 180px;
     height: auto;
+    background-color: #121212;
     text-align: center;
-    box-shadow: 0 0 10px #E0E0E0;
-    background-color: #1E1E1E;
+    background-image: url(nav-section/paisaje-del-arco-iris-del-anime.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 12px;
     text-wrap: pretty;/*Lo que hace es que nunca halla una palabra herfana*/
 }
@@ -100,5 +103,236 @@ body{
     grid-column: span 4;
 }
 
+/*-------------Seccion de navegacion Recomendada-------------*/
+.gallery-recomend{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+.gallery-recomend{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    color: rgb(39, 41, 43);
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.navigator{
+    margin:0 auto;
+    width: 95%;
+    min-height: 300px;
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px #48e;
+    gap: 10px;
+}
+
+.navigator__item{
+    margin: 2rem auto;
+    min-width: 200px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    text-decoration:none;
+    overflow: hidden;
+    border-radius: 6px;
+    border-left:7px solid rgb(91, 11, 172) ;
+}
+
+.item__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.item__img:hover{
+    transform: scale(1.1);
+}
+
+.item__title{
+    position: absolute;
+    transform: translate(-50% ,-50%);/*pone el elemento a esquina superir izquierda*/
+    top: 50%;
+    left: 50%;
+    color: #E0E0E0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    pointer-events: none;
+}
+
+/*-------------Galeria-------------*/
+.gallery{
+    width: 95%;
+    padding: 12px;
+    background-color: #1E1E1E;
+    margin: 5rem auto;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill,minmax(250px , 1fr));
+    grid-template-rows: repeat(auto-fill,minmax(200px , 1fr));
+    gap: 15px;
+}
+
+.gallery__item{
+    position: relative;
+}
+
+.gallery__title{
+    position: absolute;
+    transform: translate(-50% ,-50%);/*pone el elemento a esquina superir izquierda*/
+    top: 50%;
+    left: 50%;
+    color: #48e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.gallery__img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .3s ease;
+}
+
+.gallery__img:hover{
+    transform: scale(1.1);
+}
 
 
+.gallery__item:nth-child(2){
+    grid-row: span 2;
+}
+
+.gallery__item:nth-child(6){
+    grid-column: span 2;
+}
+
+.gallery__item:nth-child(7){
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery__item:nth-child(12){
+    grid-row: span 2;
+}
+
+
+.gallery__item:nth-child(17){
+    grid-row: span 2;
+}
+
+.gallery__item:nth-child(21){
+    grid-row: span 3;
+}
+
+.gallery__item:nth-child(19){
+    grid-column: span 2;
+}
+
+.gallery__item:last-child{
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 1190px) {
+    .gallery{
+        width: 95%;
+        padding: 12px;
+        background-color: #1E1E1E;
+        margin: 5rem auto;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fill,minmax(250px , 1fr));
+        grid-template-rows: repeat(auto-fill,minmax(200px , 1fr));
+        gap: 15px;
+    }
+
+    .gallery__item:nth-child(2){
+    grid-row: span 1;
+}
+
+.gallery__item:nth-child(6){
+    grid-column: span 1;
+}
+
+.gallery__item:nth-child(7){
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.gallery__item:nth-child(12){
+    grid-row: span 1;
+}
+
+
+.gallery__item:nth-child(17){
+    grid-row: span 1;
+}
+
+.gallery__item:nth-child(21){
+    grid-row: span 1;
+}
+
+.gallery__item:nth-child(19){
+    grid-column: span 1;
+}
+
+.gallery__item:last-child{
+    grid-column: span 1;
+}
+}
+
+@media screen and (min-width: 1200px){
+    .gallery__item:nth-child(2){
+    grid-row: span 2;
+}
+
+.gallery__item:nth-child(6){
+    grid-column: span 2;
+}
+
+.gallery__item:nth-child(7){
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery__item:nth-child(12){
+    grid-row: span 2;
+}
+
+
+.gallery__item:nth-child(17){
+    grid-row: span 2;
+}
+
+.gallery__item:nth-child(21){
+    grid-row: span 3;
+}
+
+.gallery__item:nth-child(19){
+    grid-column: span 2;
+}
+
+.gallery__item:last-child{
+    grid-column: span 2;
+}
+
+.gallery__item:nth-child(2){
+    grid-column: span 3;
+}
+
+} 
