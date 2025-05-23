@@ -5,7 +5,7 @@ body{
     box-shadow: 0 0 10px #E0E0E0;
     font-family: sans-serif;
 }
-/*-------------Header-------------*/
+/*-------------Header : START-------------*/
 
 .header{
     margin: auto;
@@ -20,7 +20,7 @@ body{
     height: auto;
     background-color: #121212;
     text-align: center;
-    background-image: url(nav-section/paisaje-del-arco-iris-del-anime.jpg);
+    background-image: url(nav-section/paisaje-del-arco-iris-del-anime.webp);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 12px;
@@ -38,7 +38,10 @@ body{
     color: 	#E0E0E0;
 }
 
-/*-------------Planes de pago-------------*/
+/*-------------Header : END-------------*/
+
+
+/*-------------Seccion de pago: START-------------*/
 
 .desc__title{
     font-size: 25px;
@@ -102,8 +105,9 @@ body{
 .item4{
     grid-column: span 4;
 }
+/*-------------Seccion de pago: END-------------*/
 
-/*-------------Seccion de navegacion Recomendada-------------*/
+/*-------------Seccion de navegacion Recomendada: START-------------*/
 .gallery-recomend{
     width: 100%;
     height: auto;
@@ -171,8 +175,9 @@ body{
     text-shadow: 0 0 10px black;
     pointer-events: none;
 }
+/*-------------Seccion de navegacion Recomendada: END-------------*/
 
-/*-------------Galeria-------------*/
+/*-------------Galeria: START-------------*/
 .gallery{
     width: 95%;
     padding: 12px;
@@ -247,6 +252,10 @@ body{
 .gallery__item:last-child{
     grid-column: span 2;
 }
+/*-------------Galeria: END-------------*/
+
+
+/*-------------Galeria Responsive: START-------------*/
 
 @media screen and (max-width: 1190px) {
 
@@ -294,4 +303,59 @@ body{
 .gallery__item:last-child{
     grid-column: span 1;
 }
+}
+
+/*-------------Galeria Responsive: END-------------*/
+
+/*-------------Footer: START-------------*/
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #D9A441;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container__footer{
+    height: auto;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 4px;
+    background-color: #131212;
+}
+
+.footer__title{
+    margin-bottom: 0;
+    padding: 4px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: 	#E0E0E0;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 12px;
+    list-style: none;
+}
+
+.list__link{
+    font: 19px;
+    color: #5F6CAF;
+    text-decoration: none;
+    transition: text-decoration 0.1s ease;
+}
+
+.list__link:hover{
+    text-decoration: underline;
+}
+
+.list__item{
+    margin: 10px;
+    padding: 5px;
 }
