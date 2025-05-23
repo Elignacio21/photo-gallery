@@ -2,23 +2,30 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    box-shadow: 0 0 10px #E0E0E0;
     font-family: sans-serif;
+    background-color: #121212;
 }
 /*-------------Header : START-------------*/
 
-.header{
+.background__header{
     margin: auto;
-    min-height: 25vh;
-    padding: 0;
+    box-shadow: 0 0 10px #38e;
+    background-color: #1F1F1F;
     width: 95%;
+    height:auto;
+}
+
+.header{
+    margin: 20px auto;
+    min-height: 25vh;
+    padding: 20px 0;
+    width: 95%;
+    background-color: #1F1F1F;
 }
 
 .header__desciption{
-    margin-top: 20px;
     min-height: 180px;
     height: auto;
-    background-color: #121212;
     text-align: center;
     background-image: url(nav-section/paisaje-del-arco-iris-del-anime.webp);
     background-size: cover;
@@ -28,7 +35,7 @@ body{
 }
 
 .description__title{
-    color: #E0E0E0;
+    color: #D9A441;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -42,6 +49,40 @@ body{
 
 
 /*-------------Seccion de pago: START-------------*/
+
+
+
+.btn-container__btn{
+    margin: 20px auto;
+    width: 250px;
+    height: 100%;
+    border: none;
+    background-image: linear-gradient(150deg,#9500ff,#09f,#00ddff);
+    border-radius: 8px;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn__text{
+    background-color: #121212;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: all .3s ease;
+}
+
+.btn-container__btn:hover .btn__text{
+    background:none ;
+}
+
+.btn-container__btn:active{
+    transform: scale(1.1);
+}
 
 .desc__title{
     font-size: 25px;
@@ -60,7 +101,7 @@ body{
     padding: 10px;
     box-shadow: 0 0 10px #D9A441 ;
     color: 	#E0E0E0;
-    background-color: #1E1E1E;
+    background-color: 	#1F1F1F;
 }
 
 .paid-plans__benefits{
@@ -78,12 +119,19 @@ body{
 .benefits__item{
     border-radius: 8px;
     overflow: hidden;
+    transition: transform .3s ease;
 }
+
+.benefits__item:hover{
+    transform: scale(1.05);
+}
+
+
 
 .benefits__desc{   
     margin: 0;
     text-shadow: 0 0 4px #5F6CAF ;
-    background-color: #131212;
+    background-color: #2C3E50;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -99,7 +147,7 @@ body{
 }
 
 .img__item4{
-    object-position: 50% 15%;
+    object-position: 50% 85%;
 }
 
 .item4{
@@ -120,7 +168,7 @@ body{
 .gallery-recomend{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: block;
-    color: rgb(39, 41, 43);
+    color: 	#D4AF37;
     font-size: 24px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -181,6 +229,7 @@ body{
 .gallery{
     width: 95%;
     padding: 12px;
+    box-shadow: 0 0 10px #38e;
     background-color: #1E1E1E;
     margin: 5rem auto;
     display: grid;
@@ -199,7 +248,8 @@ body{
     transform: translate(-50% ,-50%);/*pone el elemento a esquina superir izquierda*/
     top: 50%;
     left: 50%;
-    color: #48e;
+    color: #E0E0E0;
+    text-shadow: 0 0 15px #1E1E1E;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
@@ -215,7 +265,7 @@ body{
 }
 
 .gallery__img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -311,7 +361,7 @@ body{
 .footer{
     width: 100%;
     height: auto;
-    background-color: #D9A441;
+    background-color: #1F1F1F;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -331,7 +381,7 @@ body{
     padding: 4px;
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: 	#E0E0E0;
+    color: 	#D4AF37;
 }
 
 .footer__list{
@@ -346,7 +396,7 @@ body{
 
 .list__link{
     font: 19px;
-    color: #5F6CAF;
+    color: #E0E0E0;
     text-decoration: none;
     transition: text-decoration 0.1s ease;
 }
